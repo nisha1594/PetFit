@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNewPetViewController" customModule="PetFitApp" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="wUb-T0-9V5" id="yYD-rB-1bv"/>
+                <outlet property="ownerDetailTextField" destination="Rzx-1l-0aD" id="XkI-Qo-KEI"/>
+                <outlet property="petBreedTextField" destination="phB-CS-0iU" id="sIl-xG-Hnb"/>
+                <outlet property="petDOBTextField" destination="LO6-7A-UVn" id="y2o-Wa-HyB"/>
+                <outlet property="petImage" destination="fky-f3-Ld2" id="BYv-Fq-o3i"/>
+                <outlet property="petLocationTextField" destination="Q5X-Uw-CYF" id="emp-4A-FTc"/>
+                <outlet property="petNameTextField" destination="mWJ-eg-8IJ" id="ds2-sO-OVr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fky-f3-Ld2">
+                    <rect key="frame" x="67.5" y="41.5" width="240" height="125"/>
+                    <color key="tintColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="YG5-Wz-zBX"/>
+                        <constraint firstAttribute="height" constant="128" id="cKr-Ph-rY8"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bij-AC-iWB">
+                    <rect key="frame" x="20" y="208" width="335" height="196"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xv9-W3-7ic">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Name :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtJ-fB-oJX">
+                                    <rect key="frame" x="0.0" y="0.0" width="167.5" height="34"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mWJ-eg-8IJ">
+                                    <rect key="frame" x="167.5" y="0.0" width="167.5" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jwV-HW-KxE">
+                            <rect key="frame" x="0.0" y="54" width="335" height="34"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet DOB :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upm-QJ-SQf">
+                                    <rect key="frame" x="0.0" y="0.0" width="167.5" height="34"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter DOB" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LO6-7A-UVn">
+                                    <rect key="frame" x="167.5" y="0.0" width="167.5" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="i2U-hu-sLe">
+                            <rect key="frame" x="0.0" y="108" width="335" height="34"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Location :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNx-Ts-caR">
+                                    <rect key="frame" x="0.0" y="0.0" width="167.5" height="34"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Locaation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q5X-Uw-CYF">
+                                    <rect key="frame" x="167.5" y="0.0" width="167.5" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OLj-OP-E5D">
+                            <rect key="frame" x="0.0" y="162" width="335" height="34"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Breed :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErR-TH-MoI">
+                                    <rect key="frame" x="0.0" y="0.0" width="167.5" height="34"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Breed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="phB-CS-0iU">
+                                    <rect key="frame" x="167.5" y="0.0" width="167.5" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owner Details :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWZ-6R-J8w">
+                    <rect key="frame" x="20" y="419" width="335" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="wgC-8Y-8pW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Owner's Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rzx-1l-0aD">
+                    <rect key="frame" x="20" y="449" width="335" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="MmL-Ck-6sk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="ZiZ-nq-gMX">
+                    <rect key="frame" x="20" y="554" width="335" height="41"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Pet's Photo :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmz-Q5-rOt">
+                            <rect key="frame" x="0.0" y="0.0" width="92.5" height="41"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WO3-eC-Act">
+                            <rect key="frame" x="242.5" y="0.0" width="92.5" height="41"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="tintColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="square.and.arrow.up.fill" catalog="system"/>
+                            <connections>
+                                <action selector="addPetImage:" destination="-1" eventType="touchUpInside" id="425-rI-iBE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUb-T0-9V5">
+                    <rect key="frame" x="137.5" y="617" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.56480497119999995" green="0.1689142287" blue="0.1675068438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="SYv-hO-UXh"/>
+                        <constraint firstAttribute="height" constant="40" id="i2W-H3-KqM"/>
+                    </constraints>
+                    <state key="normal" title="Add"/>
+                    <connections>
+                        <action selector="saveAllPetData:" destination="-1" eventType="touchUpInside" id="fds-6z-o4A"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFJ-Yu-hx6">
+                    <rect key="frame" x="20" y="10" width="70" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="aaX-7o-neC"/>
+                        <constraint firstAttribute="width" constant="70" id="wkI-A6-4Ao"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                    <state key="normal" title="&lt; Back">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="clickedOnBackButton:" destination="-1" eventType="touchUpInside" id="fCr-IU-1X0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bij-AC-iWB" secondAttribute="trailing" constant="20" id="3jJ-3E-Z4x"/>
+                <constraint firstItem="ZiZ-nq-gMX" firstAttribute="top" secondItem="Rzx-1l-0aD" secondAttribute="bottom" constant="5" id="5UF-qN-coV"/>
+                <constraint firstItem="fky-f3-Ld2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9KX-DG-4Oc"/>
+                <constraint firstItem="wUb-T0-9V5" firstAttribute="top" secondItem="ZiZ-nq-gMX" secondAttribute="bottom" constant="22" id="Dp9-Yx-DvV"/>
+                <constraint firstItem="yWZ-6R-J8w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="E6q-zK-bI7"/>
+                <constraint firstItem="ZiZ-nq-gMX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="G5o-KP-t8R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rzx-1l-0aD" secondAttribute="trailing" constant="20" id="JMQ-2a-zD6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yWZ-6R-J8w" secondAttribute="trailing" constant="20" id="RnN-d2-AcZ"/>
+                <constraint firstItem="bij-AC-iWB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="VFC-hj-BrL"/>
+                <constraint firstItem="eFJ-Yu-hx6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="amB-9u-Jqf"/>
+                <constraint firstItem="yWZ-6R-J8w" firstAttribute="top" secondItem="bij-AC-iWB" secondAttribute="bottom" constant="15" id="cP4-dm-LCj"/>
+                <constraint firstItem="wUb-T0-9V5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cQ4-I0-Xq9"/>
+                <constraint firstItem="Rzx-1l-0aD" firstAttribute="top" secondItem="yWZ-6R-J8w" secondAttribute="bottom" id="e9v-7M-DNV"/>
+                <constraint firstItem="fky-f3-Ld2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="gbX-K6-y3y"/>
+                <constraint firstItem="bij-AC-iWB" firstAttribute="top" secondItem="fky-f3-Ld2" secondAttribute="bottom" constant="40" id="hC5-eO-Jo7"/>
+                <constraint firstItem="Rzx-1l-0aD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kwk-C1-Jnz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZiZ-nq-gMX" secondAttribute="trailing" constant="20" id="qQn-up-pql"/>
+                <constraint firstItem="eFJ-Yu-hx6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="wJ2-Yb-Vd8"/>
+            </constraints>
+            <point key="canvasLocation" x="40.579710144927539" y="44.866071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

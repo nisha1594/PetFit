@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HmburgerViewController" customModule="PetFitApp" customModuleProvider="target">
+            <connections>
+                <outlet property="hamburgerTableView" destination="oui-2v-SF0" id="GxG-C7-wTN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" alpha="0.69999999999999996" contentMode="scaleToFill" restorationIdentifier="HmburgerViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oui-2v-SF0">
+                    <rect key="frame" x="0.0" y="196" width="314" height="666"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLM-6F-Xpa">
+                    <rect key="frame" x="314" y="44" width="100" height="818"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="GeU-tF-4XS"/>
+                    </constraints>
+                    <connections>
+                        <action selector="closeHamburgerView:" destination="-1" eventType="touchUpInside" id="wpN-F6-mCi"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypQ-RH-T3a">
+                    <rect key="frame" x="0.0" y="44" width="314" height="150"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dhs-kc-guc">
+                            <rect key="frame" x="87" y="6.5" width="140" height="137"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="140" id="oD5-IK-gaU"/>
+                                <constraint firstAttribute="height" constant="140" id="oIm-9b-qtp"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="dhs-kc-guc" firstAttribute="centerX" secondItem="ypQ-RH-T3a" secondAttribute="centerX" id="VqQ-n5-p3v"/>
+                        <constraint firstAttribute="height" constant="150" id="acj-LP-nyF"/>
+                        <constraint firstItem="dhs-kc-guc" firstAttribute="centerY" secondItem="ypQ-RH-T3a" secondAttribute="centerY" id="kHO-zx-xuE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ypQ-RH-T3a" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7uE-UK-c2n"/>
+                <constraint firstItem="jLM-6F-Xpa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="BrO-Qj-JeV"/>
+                <constraint firstItem="oui-2v-SF0" firstAttribute="top" secondItem="ypQ-RH-T3a" secondAttribute="bottom" constant="2" id="IEq-rI-SYD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oui-2v-SF0" secondAttribute="bottom" id="JQV-VP-ph2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jLM-6F-Xpa" secondAttribute="bottom" id="NWv-HO-xIt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jLM-6F-Xpa" secondAttribute="trailing" id="Slf-56-6MB"/>
+                <constraint firstItem="jLM-6F-Xpa" firstAttribute="leading" secondItem="oui-2v-SF0" secondAttribute="trailing" id="ZQI-VJ-q81"/>
+                <constraint firstItem="jLM-6F-Xpa" firstAttribute="leading" secondItem="ypQ-RH-T3a" secondAttribute="trailing" id="Zgp-fC-hxA"/>
+                <constraint firstItem="oui-2v-SF0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cGp-AH-bDT"/>
+                <constraint firstItem="ypQ-RH-T3a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zLI-6b-W6B"/>
+            </constraints>
+            <point key="canvasLocation" x="40.579710144927539" y="55.580357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

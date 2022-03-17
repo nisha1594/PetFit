@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivitySchduledController" customModule="PetFitApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activityTableView" destination="epB-Jm-PCT" id="hHn-51-c4O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBl-YO-A8A" userLabel="topView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOg-eb-73W">
+                            <rect key="frame" x="14" y="12" width="55" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <state key="normal" title="&lt; Back">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="backTapped:" destination="-1" eventType="touchUpInside" id="v7q-js-cf7"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Schduled Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmw-Yo-IqA">
+                            <rect key="frame" x="97" y="5" width="220" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="bZa-v0-8FB"/>
+                                <constraint firstAttribute="width" constant="220" id="hu2-h4-5GZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="n0D-p5-5gG"/>
+                        <constraint firstItem="Pmw-Yo-IqA" firstAttribute="centerX" secondItem="GBl-YO-A8A" secondAttribute="centerX" id="vSw-OJ-4XF"/>
+                        <constraint firstItem="Pmw-Yo-IqA" firstAttribute="centerY" secondItem="GBl-YO-A8A" secondAttribute="centerY" id="yQv-pk-lsc"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="epB-Jm-PCT">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TFK-fv-UCq"/>
+                        <outlet property="delegate" destination="-1" id="ONL-sY-LKZ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="GBl-YO-A8A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Ts-sz-rMW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="epB-Jm-PCT" secondAttribute="bottom" id="GUb-7q-Qay"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="epB-Jm-PCT" secondAttribute="trailing" id="MuA-Rr-REF"/>
+                <constraint firstAttribute="trailing" secondItem="GBl-YO-A8A" secondAttribute="trailing" id="OH6-os-rP2"/>
+                <constraint firstItem="GBl-YO-A8A" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RhZ-fA-v4f"/>
+                <constraint firstItem="epB-Jm-PCT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="goW-GE-kOh"/>
+                <constraint firstItem="epB-Jm-PCT" firstAttribute="top" secondItem="GBl-YO-A8A" secondAttribute="bottom" id="ve4-hP-1Zu"/>
+            </constraints>
+            <point key="canvasLocation" x="-55" y="60"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

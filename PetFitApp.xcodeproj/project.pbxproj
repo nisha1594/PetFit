@@ -3,27 +3,113 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281752522750D3DC002D7E7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281752512750D3DC002D7E7F /* LoginViewController.swift */; };
+		281752552750D791002D7E7F /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281752542750D791002D7E7F /* RegisterUserViewController.swift */; };
+		281752822750F64C002D7E7F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281752812750F64C002D7E7F /* Utilities.swift */; };
+		283F327D2760C9AD00FA8E3C /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F327B2760C9AD00FA8E3C /* AlbumCollectionViewCell.swift */; };
+		283F327E2760C9AD00FA8E3C /* AlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 283F327C2760C9AD00FA8E3C /* AlbumCollectionViewCell.xib */; };
+		283F32872760E28B00FA8E3C /* SchduleActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F32852760E28B00FA8E3C /* SchduleActivityController.swift */; };
+		283F32882760E28B00FA8E3C /* SchduleActivityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 283F32862760E28B00FA8E3C /* SchduleActivityController.xib */; };
+		283F328D2760F12D00FA8E3C /* ActivitySchduledController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F328B2760F12D00FA8E3C /* ActivitySchduledController.swift */; };
+		283F328E2760F12D00FA8E3C /* ActivitySchduledController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 283F328C2760F12D00FA8E3C /* ActivitySchduledController.xib */; };
+		283F329227610D3600FA8E3C /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F329027610D3600FA8E3C /* ActivityCell.swift */; };
+		283F329327610D3600FA8E3C /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 283F329127610D3600FA8E3C /* ActivityCell.xib */; };
+		283F329A27611B9500FA8E3C /* ActivityDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F329927611B9500FA8E3C /* ActivityDataModel.swift */; };
+		283F329D27612C8200FA8E3C /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F329C27612C8200FA8E3C /* FirebaseManager.swift */; };
+		28750160276097FC00E6E483 /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2875015E276097FC00E6E483 /* PetDetailViewController.swift */; };
+		28750161276097FC00E6E483 /* PetDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2875015F276097FC00E6E483 /* PetDetailViewController.xib */; };
+		287501772760C77B00E6E483 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287501752760C77A00E6E483 /* AlbumViewController.swift */; };
+		287501782760C77B00E6E483 /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287501762760C77B00E6E483 /* AlbumViewController.xib */; };
 		2892120C2750C40000A199C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892120B2750C40000A199C1 /* AppDelegate.swift */; };
 		2892120E2750C40000A199C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892120D2750C40000A199C1 /* SceneDelegate.swift */; };
-		289212102750C40000A199C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892120F2750C40000A199C1 /* ViewController.swift */; };
 		289212132750C40000A199C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289212112750C40000A199C1 /* Main.storyboard */; };
 		289212152750C40200A199C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 289212142750C40200A199C1 /* Assets.xcassets */; };
 		289212182750C40200A199C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289212162750C40200A199C1 /* LaunchScreen.storyboard */; };
+		28927679275644F70024337E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28927678275644F70024337E /* GoogleService-Info.plist */; };
+		2892769E2756A7800024337E /* AddNewPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892769C2756A77F0024337E /* AddNewPetViewController.swift */; };
+		2892769F2756A7800024337E /* AddNewPetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2892769D2756A77F0024337E /* AddNewPetViewController.xib */; };
+		28927707275798580024337E /* PetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28927705275798580024337E /* PetTableViewCell.swift */; };
+		28927708275798580024337E /* PetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28927706275798580024337E /* PetTableViewCell.xib */; };
+		2892770C2757A87C0024337E /* PetDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892770B2757A87C0024337E /* PetDataModel.swift */; };
+		289277222758149E0024337E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289277212758149E0024337E /* UITextField+Extension.swift */; };
+		289277A92759685D0024337E /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289277A72759685D0024337E /* MenuTableViewCell.swift */; };
+		289277AA2759685D0024337E /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289277A82759685D0024337E /* MenuTableViewCell.xib */; };
+		28B3A6FF2751013500154175 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B3A6FE2751013500154175 /* HomeViewController.swift */; };
+		28B3A7022751018E00154175 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B3A7012751018E00154175 /* Constants.swift */; };
+		28BA265A275E2FF9005C27C8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BA2658275E2FF9005C27C8 /* ProfileViewController.swift */; };
+		28BA265B275E2FF9005C27C8 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BA2659275E2FF9005C27C8 /* ProfileViewController.xib */; };
+		28BA265F275F53FB005C27C8 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BA265D275F53FB005C27C8 /* FeedbackViewController.swift */; };
+		28BA2660275F53FB005C27C8 /* FeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BA265E275F53FB005C27C8 /* FeedbackViewController.xib */; };
+		28BA2664275F541D005C27C8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BA2662275F541D005C27C8 /* AboutViewController.swift */; };
+		28BA2665275F541D005C27C8 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BA2663275F541D005C27C8 /* AboutViewController.xib */; };
+		28BA266A275F77F0005C27C8 /* EmojiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BA2668275F77F0005C27C8 /* EmojiCollectionViewCell.swift */; };
+		28BA266B275F77F0005C27C8 /* EmojiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BA2669275F77F0005C27C8 /* EmojiCollectionViewCell.xib */; };
+		28BA2670275F7905005C27C8 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BA266E275F7905005C27C8 /* CategoryCollectionViewCell.swift */; };
+		28BA2671275F7905005C27C8 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BA266F275F7905005C27C8 /* CategoryCollectionViewCell.xib */; };
+		28ED07C92752E84D007E274B /* HmburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED07C72752E84D007E274B /* HmburgerViewController.swift */; };
+		28ED07CA2752E84D007E274B /* HmburgerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28ED07C82752E84D007E274B /* HmburgerViewController.xib */; };
+		28ED07E62754DE2E007E274B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED07E52754DE2E007E274B /* BaseViewController.swift */; };
+		28ED07E92754E014007E274B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED07E82754E014007E274B /* UIViewController+Extension.swift */; };
+		7027278948226D7C3A727480 /* Pods_PetFitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D665145119F5D2E7EB1B9EA9 /* Pods_PetFitApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		281752512750D3DC002D7E7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		281752542750D791002D7E7F /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
+		281752812750F64C002D7E7F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		283F327B2760C9AD00FA8E3C /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		283F327C2760C9AD00FA8E3C /* AlbumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCollectionViewCell.xib; sourceTree = "<group>"; };
+		283F32852760E28B00FA8E3C /* SchduleActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchduleActivityController.swift; sourceTree = "<group>"; };
+		283F32862760E28B00FA8E3C /* SchduleActivityController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchduleActivityController.xib; sourceTree = "<group>"; };
+		283F328B2760F12D00FA8E3C /* ActivitySchduledController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySchduledController.swift; sourceTree = "<group>"; };
+		283F328C2760F12D00FA8E3C /* ActivitySchduledController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitySchduledController.xib; sourceTree = "<group>"; };
+		283F329027610D3600FA8E3C /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		283F329127610D3600FA8E3C /* ActivityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
+		283F329927611B9500FA8E3C /* ActivityDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDataModel.swift; sourceTree = "<group>"; };
+		283F329C27612C8200FA8E3C /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		2875015E276097FC00E6E483 /* PetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewController.swift; sourceTree = "<group>"; };
+		2875015F276097FC00E6E483 /* PetDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PetDetailViewController.xib; sourceTree = "<group>"; };
+		287501752760C77A00E6E483 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		287501762760C77B00E6E483 /* AlbumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
 		289212082750C40000A199C1 /* PetFitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2892120B2750C40000A199C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2892120D2750C40000A199C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2892120F2750C40000A199C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		289212122750C40000A199C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		289212142750C40200A199C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		289212172750C40200A199C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		289212192750C40200A199C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28927678275644F70024337E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2892769C2756A77F0024337E /* AddNewPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPetViewController.swift; sourceTree = "<group>"; };
+		2892769D2756A77F0024337E /* AddNewPetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewPetViewController.xib; sourceTree = "<group>"; };
+		28927705275798580024337E /* PetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTableViewCell.swift; sourceTree = "<group>"; };
+		28927706275798580024337E /* PetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PetTableViewCell.xib; sourceTree = "<group>"; };
+		2892770B2757A87C0024337E /* PetDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDataModel.swift; sourceTree = "<group>"; };
+		289277212758149E0024337E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		289277A72759685D0024337E /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		289277A82759685D0024337E /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		28B3A6FE2751013500154175 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		28B3A7012751018E00154175 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		28BA2658275E2FF9005C27C8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		28BA2659275E2FF9005C27C8 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		28BA265D275F53FB005C27C8 /* FeedbackViewController.swift */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		28BA265E275F53FB005C27C8 /* FeedbackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedbackViewController.xib; sourceTree = "<group>"; };
+		28BA2662275F541D005C27C8 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		28BA2663275F541D005C27C8 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		28BA2668275F77F0005C27C8 /* EmojiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCollectionViewCell.swift; sourceTree = "<group>"; };
+		28BA2669275F77F0005C27C8 /* EmojiCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiCollectionViewCell.xib; sourceTree = "<group>"; };
+		28BA266E275F7905005C27C8 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		28BA266F275F7905005C27C8 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		28ED07C72752E84D007E274B /* HmburgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmburgerViewController.swift; sourceTree = "<group>"; };
+		28ED07C82752E84D007E274B /* HmburgerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HmburgerViewController.xib; sourceTree = "<group>"; };
+		28ED07E52754DE2E007E274B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		28ED07E82754E014007E274B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		971CE64D89E0E4C35A8323EC /* Pods-PetFitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetFitApp.debug.xcconfig"; path = "Target Support Files/Pods-PetFitApp/Pods-PetFitApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D665145119F5D2E7EB1B9EA9 /* Pods_PetFitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetFitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A8F52C2B2626818280904A /* Pods-PetFitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetFitApp.release.xcconfig"; path = "Target Support Files/Pods-PetFitApp/Pods-PetFitApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +117,100 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7027278948226D7C3A727480 /* Pods_PetFitApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2817527E2750DB57002D7E7F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				283F32842760E25800FA8E3C /* Activity */,
+				283F32822760D54500FA8E3C /* NewPet */,
+				283F32812760D4D800FA8E3C /* Home */,
+				283F32802760D4B400FA8E3C /* UserLogin */,
+				2875017A2760C86C00E6E483 /* Album */,
+				28BA2667275F77C4005C27C8 /* Feedback */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		281752802750F630002D7E7F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				281752812750F64C002D7E7F /* Utilities.swift */,
+				28B3A7012751018E00154175 /* Constants.swift */,
+				28ED07E82754E014007E274B /* UIViewController+Extension.swift */,
+				289277212758149E0024337E /* UITextField+Extension.swift */,
+				283F329C27612C8200FA8E3C /* FirebaseManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		283F32802760D4B400FA8E3C /* UserLogin */ = {
+			isa = PBXGroup;
+			children = (
+				281752512750D3DC002D7E7F /* LoginViewController.swift */,
+				281752542750D791002D7E7F /* RegisterUserViewController.swift */,
+				28BA2658275E2FF9005C27C8 /* ProfileViewController.swift */,
+				28BA2659275E2FF9005C27C8 /* ProfileViewController.xib */,
+			);
+			path = UserLogin;
+			sourceTree = "<group>";
+		};
+		283F32812760D4D800FA8E3C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				28ED07E52754DE2E007E274B /* BaseViewController.swift */,
+				28B3A6FE2751013500154175 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		283F32822760D54500FA8E3C /* NewPet */ = {
+			isa = PBXGroup;
+			children = (
+				2892769C2756A77F0024337E /* AddNewPetViewController.swift */,
+				2892769D2756A77F0024337E /* AddNewPetViewController.xib */,
+				2875015E276097FC00E6E483 /* PetDetailViewController.swift */,
+				2875015F276097FC00E6E483 /* PetDetailViewController.xib */,
+			);
+			path = NewPet;
+			sourceTree = "<group>";
+		};
+		283F32842760E25800FA8E3C /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				283F32852760E28B00FA8E3C /* SchduleActivityController.swift */,
+				283F32862760E28B00FA8E3C /* SchduleActivityController.xib */,
+				283F328B2760F12D00FA8E3C /* ActivitySchduledController.swift */,
+				283F328C2760F12D00FA8E3C /* ActivitySchduledController.xib */,
+				283F329027610D3600FA8E3C /* ActivityCell.swift */,
+				283F329127610D3600FA8E3C /* ActivityCell.xib */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		2875017A2760C86C00E6E483 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				287501752760C77A00E6E483 /* AlbumViewController.swift */,
+				287501762760C77B00E6E483 /* AlbumViewController.xib */,
+				283F327B2760C9AD00FA8E3C /* AlbumCollectionViewCell.swift */,
+				283F327C2760C9AD00FA8E3C /* AlbumCollectionViewCell.xib */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
 		289211FF2750C40000A199C1 = {
 			isa = PBXGroup;
 			children = (
 				2892120A2750C40000A199C1 /* PetFitApp */,
 				289212092750C40000A199C1 /* Products */,
+				852E5C87C654260297738F8C /* Pods */,
+				CE9E90D3F8A08A1179D5A256 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +225,73 @@
 		2892120A2750C40000A199C1 /* PetFitApp */ = {
 			isa = PBXGroup;
 			children = (
+				2892773927590A920024337E /* View */,
+				2892770A2757A3EB0024337E /* Modal */,
+				281752802750F630002D7E7F /* Helpers */,
+				2817527E2750DB57002D7E7F /* Controllers */,
 				2892120B2750C40000A199C1 /* AppDelegate.swift */,
 				2892120D2750C40000A199C1 /* SceneDelegate.swift */,
-				2892120F2750C40000A199C1 /* ViewController.swift */,
 				289212112750C40000A199C1 /* Main.storyboard */,
 				289212142750C40200A199C1 /* Assets.xcassets */,
 				289212162750C40200A199C1 /* LaunchScreen.storyboard */,
+				28927678275644F70024337E /* GoogleService-Info.plist */,
 				289212192750C40200A199C1 /* Info.plist */,
 			);
 			path = PetFitApp;
+			sourceTree = "<group>";
+		};
+		2892770A2757A3EB0024337E /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				2892770B2757A87C0024337E /* PetDataModel.swift */,
+				283F329927611B9500FA8E3C /* ActivityDataModel.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		2892773927590A920024337E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28ED07C72752E84D007E274B /* HmburgerViewController.swift */,
+				28ED07C82752E84D007E274B /* HmburgerViewController.xib */,
+				28BA2662275F541D005C27C8 /* AboutViewController.swift */,
+				28BA2663275F541D005C27C8 /* AboutViewController.xib */,
+				28927705275798580024337E /* PetTableViewCell.swift */,
+				28927706275798580024337E /* PetTableViewCell.xib */,
+				289277A72759685D0024337E /* MenuTableViewCell.swift */,
+				289277A82759685D0024337E /* MenuTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28BA2667275F77C4005C27C8 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				28BA265D275F53FB005C27C8 /* FeedbackViewController.swift */,
+				28BA265E275F53FB005C27C8 /* FeedbackViewController.xib */,
+				28BA2668275F77F0005C27C8 /* EmojiCollectionViewCell.swift */,
+				28BA2669275F77F0005C27C8 /* EmojiCollectionViewCell.xib */,
+				28BA266E275F7905005C27C8 /* CategoryCollectionViewCell.swift */,
+				28BA266F275F7905005C27C8 /* CategoryCollectionViewCell.xib */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		852E5C87C654260297738F8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				971CE64D89E0E4C35A8323EC /* Pods-PetFitApp.debug.xcconfig */,
+				E6A8F52C2B2626818280904A /* Pods-PetFitApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE9E90D3F8A08A1179D5A256 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D665145119F5D2E7EB1B9EA9 /* Pods_PetFitApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +301,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2892121C2750C40200A199C1 /* Build configuration list for PBXNativeTarget "PetFitApp" */;
 			buildPhases = (
+				15D67206D2B87FB0E10A9BA4 /* [CP] Check Pods Manifest.lock */,
 				289212042750C40000A199C1 /* Sources */,
 				289212052750C40000A199C1 /* Frameworks */,
 				289212062750C40000A199C1 /* Resources */,
+				2F42E701F2ED3531AB43326F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,22 +353,105 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28BA265B275E2FF9005C27C8 /* ProfileViewController.xib in Resources */,
 				289212182750C40200A199C1 /* LaunchScreen.storyboard in Resources */,
+				28927708275798580024337E /* PetTableViewCell.xib in Resources */,
+				28750161276097FC00E6E483 /* PetDetailViewController.xib in Resources */,
+				283F327E2760C9AD00FA8E3C /* AlbumCollectionViewCell.xib in Resources */,
+				28BA266B275F77F0005C27C8 /* EmojiCollectionViewCell.xib in Resources */,
+				28ED07CA2752E84D007E274B /* HmburgerViewController.xib in Resources */,
+				28927679275644F70024337E /* GoogleService-Info.plist in Resources */,
+				283F328E2760F12D00FA8E3C /* ActivitySchduledController.xib in Resources */,
+				28BA2671275F7905005C27C8 /* CategoryCollectionViewCell.xib in Resources */,
 				289212152750C40200A199C1 /* Assets.xcassets in Resources */,
+				283F329327610D3600FA8E3C /* ActivityCell.xib in Resources */,
+				287501782760C77B00E6E483 /* AlbumViewController.xib in Resources */,
 				289212132750C40000A199C1 /* Main.storyboard in Resources */,
+				289277AA2759685D0024337E /* MenuTableViewCell.xib in Resources */,
+				283F32882760E28B00FA8E3C /* SchduleActivityController.xib in Resources */,
+				2892769F2756A7800024337E /* AddNewPetViewController.xib in Resources */,
+				28BA2665275F541D005C27C8 /* AboutViewController.xib in Resources */,
+				28BA2660275F53FB005C27C8 /* FeedbackViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15D67206D2B87FB0E10A9BA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetFitApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F42E701F2ED3531AB43326F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetFitApp/Pods-PetFitApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetFitApp/Pods-PetFitApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetFitApp/Pods-PetFitApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		289212042750C40000A199C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289212102750C40000A199C1 /* ViewController.swift in Sources */,
+				281752552750D791002D7E7F /* RegisterUserViewController.swift in Sources */,
+				28927707275798580024337E /* PetTableViewCell.swift in Sources */,
+				28BA265F275F53FB005C27C8 /* FeedbackViewController.swift in Sources */,
+				2892770C2757A87C0024337E /* PetDataModel.swift in Sources */,
+				281752522750D3DC002D7E7F /* LoginViewController.swift in Sources */,
+				28ED07C92752E84D007E274B /* HmburgerViewController.swift in Sources */,
 				2892120C2750C40000A199C1 /* AppDelegate.swift in Sources */,
+				28BA265A275E2FF9005C27C8 /* ProfileViewController.swift in Sources */,
+				283F329A27611B9500FA8E3C /* ActivityDataModel.swift in Sources */,
+				281752822750F64C002D7E7F /* Utilities.swift in Sources */,
+				28ED07E62754DE2E007E274B /* BaseViewController.swift in Sources */,
+				287501772760C77B00E6E483 /* AlbumViewController.swift in Sources */,
+				283F32872760E28B00FA8E3C /* SchduleActivityController.swift in Sources */,
+				283F328D2760F12D00FA8E3C /* ActivitySchduledController.swift in Sources */,
+				28B3A7022751018E00154175 /* Constants.swift in Sources */,
+				289277222758149E0024337E /* UITextField+Extension.swift in Sources */,
+				283F329D27612C8200FA8E3C /* FirebaseManager.swift in Sources */,
+				28BA2664275F541D005C27C8 /* AboutViewController.swift in Sources */,
 				2892120E2750C40000A199C1 /* SceneDelegate.swift in Sources */,
+				28ED07E92754E014007E274B /* UIViewController+Extension.swift in Sources */,
+				2892769E2756A7800024337E /* AddNewPetViewController.swift in Sources */,
+				28BA2670275F7905005C27C8 /* CategoryCollectionViewCell.swift in Sources */,
+				283F329227610D3600FA8E3C /* ActivityCell.swift in Sources */,
+				283F327D2760C9AD00FA8E3C /* AlbumCollectionViewCell.swift in Sources */,
+				28B3A6FF2751013500154175 /* HomeViewController.swift in Sources */,
+				28750160276097FC00E6E483 /* PetDetailViewController.swift in Sources */,
+				28BA266A275F77F0005C27C8 /* EmojiCollectionViewCell.swift in Sources */,
+				289277A92759685D0024337E /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +595,7 @@
 		};
 		2892121D2750C40200A199C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971CE64D89E0E4C35A8323EC /* Pods-PetFitApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +614,7 @@
 		};
 		2892121E2750C40200A199C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A8F52C2B2626818280904A /* Pods-PetFitApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
